@@ -1,0 +1,14 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="home">
+  <view class="page-section page-section-spacing swiper">
+    <swiper>
+        <swiper-item wx:if="{{bool}}">
+          <image src="../../image/img-1.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="../../image/img-2.jpg"></image>
+        </swiper-item>
+    </swiper>
+  </view>
+  <button type="primary">页面主1操作 Normal</button>
+</view>

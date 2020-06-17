@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/home/home"
+  ],
+  "tabBar": {
+    "selectedColor": "pink",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "还愿清单",
+      "iconPath": "image/tabbar-1.png",
+      "selectedIconPath": "image/tabbar-1.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "愿望清单",
+      "iconPath": "image/tabbar-2.png",
+      "selectedIconPath": "image/tabbar-2.png"
+    }]
+  },
+  "window": {
+    "backgroundColor": "#666",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3687CA",
+    "navigationBarTitleText": "移动监管",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

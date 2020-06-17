@@ -1,0 +1,6 @@
+/* miniprogram/pages/home/home.wxss */
+/* .home {
+} */
+  imgae {
+    width: 100%;
+  }
