@@ -1,14 +1,35 @@
 <!--miniprogram/pages/home/home.wxml-->
+<wxs src="../../utils/tools.wxs" module="tools" />
 <view class="home">
-  <view class="page-section page-section-spacing swiper">
-    <swiper>
-        <swiper-item wx:if="{{bool}}">
-          <image src="../../image/img-1.png"></image>
-        </swiper-item>
-        <swiper-item>
-          <image src="../../image/img-2.jpg"></image>
-        </swiper-item>
-    </swiper>
-  </view>
-  <button type="primary">页面主1操作 Normal</button>
+  <van-sticky>
+    <view class="block">🐷🐑{{gap}}～</view>
+  </van-sticky>
+  <van-swipe-cell wx:for="{{array}}" wx:key="id" right-width="{{ 60 }}" left-width="{{ 60 }}">
+    <van-button type="primary" slot="left" data-item="{{item}}" bindtap="updateLoan">完成</van-button>
+    <van-cell-group>
+      <van-cell value="{{item.title}}" data-item="{{item}}" bind:click="showPopup">
+        <view slot="title">
+          <van-tag mark wx:if="{{item.status === 0}}">未完成</van-tag>
+          <van-tag mark type="success" wx:if="{{item.status === 1}}">已完成</van-tag>
+          <van-tag mark type="danger" wx:if="{{item.status === 2}}">已取消</van-tag>
+          <van-tag mark type="warning" wx:if="{{item.status === 3}}">进行中</van-tag>
+        </view>
+      </van-cell>
+    </van-cell-group>
+    <van-button type="danger" slot="right" data-title="{{item.title}}" bindtap="deleteLoan">删除</van-button>
+  </van-swipe-cell>
+  <van-cell-group>
+    <van-field value="{{ newloan }}" placeholder="请输入新的贷款" bind:change="onNewLoanChange" />
+  </van-cell-group>
+  <button class="add" bindtap="addNewLoan">新增</button>
+  <van-toast id="van-toast" />
+  <van-popup show="{{ show }}" bind:close="onClose" round custom-style="width: 70%">
+    <van-cell-group>
+      <van-cell title-width="{{ '60px' }}" title="创建时间" value="{{tools.subDate(object.createTime)}}" />
+      <van-cell title="完成时间" value="{{tools.subDate(object.completeTime)}}" />
+      <van-cell title="详情" label="{{ object.details}}" border="{{ false }}" />
+    </van-cell-group>
+    <van-button type="warning" custom-class="width" data-item="{{object}}" bindtap="startLoan">开始</van-button>
+    <van-button type="primary" custom-class="width" data-item="{{object}}" bindtap="updateLoan">完成</van-button>
+  </van-popup>
 </view>

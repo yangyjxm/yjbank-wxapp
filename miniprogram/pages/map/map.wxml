@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>
+<text>足迹已经遍布{{ countryNum }}个国家{{ provinceNum }}个省份</text>
+<button class="location-btn" bindtap="goLocation">定位
+</button>

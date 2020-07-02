@@ -1,19 +1,44 @@
 {
-	"miniprogramRoot": "miniprogram/",
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
+		"enhance": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"enhance": true
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
 	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.2",
 	"appid": "wxa88115e813d1c9d8",
 	"projectname": "library",
-	"libVersion": "2.10.2",
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionTemplateRoot": "",
+	"watchOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"compileType": "miniprogram",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -30,13 +55,30 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "pages/map/map",
+					"pathName": "pages/map/map",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "定位",
+					"pathName": "pages/location/location",
+					"scene": null
 				}
 			]
 		}

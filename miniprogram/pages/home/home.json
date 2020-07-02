@@ -1,3 +1,5 @@
 {
+  "backgroundColorTop": "#FFB6C1",
+  "enablePullDownRefresh": true,
   "usingComponents": {}
 }

@@ -1,0 +1,51 @@
+/* miniprogram/pages/mine/mine.wxss */
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 190px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #ffb6c1;
+}
+
+.van-image {
+  flex: none;
+  margin: 40px 20px 0 20px;
+}
+
+.userInfo{
+  padding-top: 60px;
+  color: #fff;
+  /* align-content: center; */
+}
+
+.statistics{
+  /* display: flex; */
+  margin: -40px auto 10px;
+  width: 80%;
+  height: 100px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+van-col{
+  text-align: center;
+}
+
+.number {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 14px;
+  color: #999;
+}
+
+.block {
+  width: 40%;
+  height: 100px;
+  background-color: #666;
+}

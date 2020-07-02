@@ -1,0 +1,15 @@
+<!--miniprogram/pages/login/login.wxml-->
+<!-- <view class="login"> -->
+<view class="block">
+  <!-- <view class="logo-border">
+    <view class="logo-text">
+      YJ
+    </view>
+  </view> -->
+  <view class="block-text">
+    YJ
+  </view>
+</view>
+<button class="login-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">一键登录
+</button>
+<!-- </view> -->

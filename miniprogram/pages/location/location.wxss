@@ -1,0 +1,6 @@
+/* miniprogram/pages/map/map.wxss */
+
+page {
+  height: 100%;
+  text-align: center;
+}
